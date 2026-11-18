@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-tertiary-fixed":"#00201d","surface-variant":"#dde1fc","on-surface":"#161b2e","on-surface-variant":"#454652","surface-bright":"#faf8ff","on-secondary-container":"#684000","surface-container-high":"#e4e7ff","primary":"#0e1f7a","inverse-on-surface":"#eff0ff","secondary":"#855300","primary-fixed-dim":"#bbc3ff","tertiary":"#00322d","inverse-surface":"#2a2f44","surface-container-low":"#f3f2ff","surface-container-lowest":"#ffffff","inverse-primary":"#bbc3ff","on-background":"#161b2e","surface-container":"#ebedff","tertiary-fixed":"#89f5e7","on-secondary":"#ffffff","secondary-fixed-dim":"#ffb95f","on-error":"#ffffff","primary-container":"#2a3890","on-primary-container":"#9ba8ff","tertiary-fixed-dim":"#6bd8cb","surface-tint":"#4957af","on-error-container":"#93000a","outline-variant":"#c6c5d4","on-secondary-fixed-variant":"#653e00","surface-container-highest":"#dde1fc","secondary-fixed":"#ffddb8","on-tertiary-fixed-variant":"#005049","on-primary-fixed":"#000e5f","tertiary-container":"#004a43","primary-fixed":"#dfe0ff","on-tertiary-container":"#4fbfb2","on-tertiary":"#ffffff","surface-dim":"#d5d9f4","background":"#faf8ff","on-secondary-fixed":"#2a1700","error-container":"#ffdad6","error":"#ba1a1a","outline":"#767683","on-primary-fixed-variant":"#303e96","surface":"#faf8ff","secondary-container":"#fea619"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-tablet":"1.5rem","gutter-desktop":"1.75rem","space-md":"1rem","space-xs":"0.25rem",margin:"1rem","space-xl":"2.5rem","margin-desktop":"2.5rem","space-lg":"1.5rem",gutter:"1.25rem","space-sm":"0.5rem"},fontFamily:{"display-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Space Grotesk"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Space Grotesk"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"body-md":["Plus Jakarta Sans"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"26px",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-lg-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(42,56,144,0.06)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="explore-events" href="#"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm group-hover:bg-primary-container transition-colors"><span class="material-symbols-outlined text-[24px]">bolt</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">CampusPulse</span></a><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-label-lg rounded-xl"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="explore-events" href="#">Explore Events</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="my-passes" href="#">My Passes</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="organizer-studio" href="#">Organizer Studio</a><a aria-current="page" class="px-space-md py-space-sm transition-all bg-surface-container-high text-primary font-label-lg rounded-xl" data-path="admin-audit" href="#">Admin Audit</a></nav></div><div class="flex items-center gap-space-md"><div class="relative flex items-center p-1 bg-surface-container-lowest rounded-xl shadow-[0_2px_8px_rgba(42,56,144,0.08)]"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider px-space-sm select-none hidden sm:inline">Role</span><div aria-label="Active campus role" class="flex items-center bg-surface-container rounded-lg p-0.5" role="group"><button class="font-label-md text-label-md px-space-sm py-1 rounded-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all" type="button">Student</button><button class="font-label-md text-label-md px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-all" type="button">Organizer</button><button class="font-label-md text-label-md px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-all" type="button">Admin</button></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Super Admin Context Ribbon & Alert Banner -->
+<section class="w-full px-margin-desktop pt-space-md pb-space-lg">
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs z-10">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+            Super Admin Sandbox
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[14px]">lock_open_right</span>
+            Auth Bypass Mode: Active
+          </span>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+            Node #CP-US-EAST-04 • Production Replica v2.4.9
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+          CampusPulse System Infrastructure & Real-Time Audit
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Direct operational telemetry, ACID database integrity records, and unified load monitoring for multi-tier student activity nodes.
+        </p>
+</div>
+<!-- Quick Global Engine Actions -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0 z-10">
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-all" id="btn-sanity-check">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+          Run System Sanity Check
+        </button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg shadow-sm hover:bg-secondary-fixed transition-all font-semibold" id="btn-simulate-spike">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+          Simulate Spike Traffic
+        </button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container text-primary font-label-lg text-label-lg hover:bg-surface-container-high transition-all" id="btn-export-log">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Export Full Audit Log
+        </button>
+</div>
+</div>
+</section>
+<!-- Top KPI Metrics 4-Card Row -->
+<section class="w-full px-margin-desktop pb-space-xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:-translate-y-0.5 transition-transform">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Campus Lifecycle</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-bold">18</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Events</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 14 Active / Live
+          </span>
+<span class="text-outline">4 Archived Past</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:-translate-y-0.5 transition-transform">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Seat Utilization</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-secondary tracking-tight font-bold">342</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Tickets Issued</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">confirmation_number</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">92% Aggregate Fill Rate</span>
+<span class="text-secondary font-bold">372 Total Capacity</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full transition-all duration-700" style="width: 92%"></div>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:-translate-y-0.5 transition-transform">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Directory Directory</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-bold">325</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Identities</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/60 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+</div>
+<div class="mt-4 grid grid-cols-3 gap-1 text-center font-label-sm text-label-sm">
+<div class="bg-surface-container rounded p-1.5 flex flex-col">
+<span class="font-bold text-primary">280</span>
+<span class="text-[10px] text-on-surface-variant">Students</span>
+</div>
+<div class="bg-secondary-fixed/30 rounded p-1.5 flex flex-col">
+<span class="font-bold text-secondary">42</span>
+<span class="text-[10px] text-on-surface-variant">Orgs</span>
+</div>
+<div class="bg-tertiary-fixed/30 rounded p-1.5 flex flex-col">
+<span class="font-bold text-tertiary">3</span>
+<span class="text-[10px] text-on-surface-variant">Admins</span>
+</div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:-translate-y-0.5 transition-transform">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Integrity Rejections</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-tertiary tracking-tight font-bold">0.02%</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">STABLE</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/50 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">flaky</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary font-bold">verified</span>
+            409 Race Lock Protection
+          </span>
+<span class="font-mono text-[11px] bg-surface-container px-2 py-0.5 rounded text-primary font-semibold">1 req / 5k</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main 2-Column Desktop Grid Layout -->
+<section class="w-full px-margin-desktop pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN: API & Process Monitor (5 Columns on Desktop) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg min-w-0">
+<!-- Live API Real-Time Ledger -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">API & Process Monitor</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">Live Socket: 120 FPS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant -mt-1">
+            Real-time trace capturing inbound traffic, microservice latency, and transaction bounds.
+          </p>
+<!-- Endpoints Stack -->
+<div class="flex flex-col gap-space-sm" id="endpoint-container">
+<!-- Endpoint 1 -->
+<div class="p-space-md bg-surface rounded-xl flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2 py-0.5 rounded font-mono text-[11px] font-bold bg-primary text-on-primary">GET</span>
+<span class="font-mono text-label-md text-on-surface font-semibold truncate">/api/events</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-bold">200 OK</span>
+<span class="font-mono text-label-sm text-on-surface-variant">38ms</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[12px] pt-1">
+<span>Browse events stream (Cached Redis L2)</span>
+<span class="text-primary font-semibold">1,240 calls/min</span>
+</div>
+</div>
+<!-- Endpoint 2 -->
+<div class="p-space-md bg-surface rounded-xl flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2 py-0.5 rounded font-mono text-[11px] font-bold bg-secondary text-on-secondary">POST</span>
+<span class="font-mono text-label-md text-on-surface font-semibold truncate">/api/registrations</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-bold">201 / 409</span>
+<span class="font-mono text-label-sm text-on-surface-variant">84ms</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[12px] pt-1">
+<span>Atomic capacity check & ticket reservation</span>
+<span class="text-secondary font-semibold">Isolation: Serializable</span>
+</div>
+</div>
+<!-- Endpoint 3 -->
+<div class="p-space-md bg-surface rounded-xl flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2 py-0.5 rounded font-mono text-[11px] font-bold bg-primary text-on-primary">GET</span>
+<span class="font-mono text-label-md text-on-surface font-semibold truncate">/api/me/registrations</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-bold">200 OK</span>
+<span class="font-mono text-label-sm text-on-surface-variant">24ms</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[12px] pt-1">
+<span>Student pass retrieval & QR cryptosign</span>
+<span class="text-tertiary font-semibold">410 req/min</span>
+</div>
+</div>
+<!-- Endpoint 4 -->
+<div class="p-space-md bg-surface rounded-xl flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2 py-0.5 rounded font-mono text-[11px] font-bold bg-primary text-on-primary">GET</span>
+<span class="font-mono text-label-md text-on-surface font-semibold truncate">/api/events/{id}/registrations</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-bold">200 OK</span>
+<span class="font-mono text-label-sm text-on-surface-variant">52ms</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[12px] pt-1">
+<span>Organizer-scoped attendee roster stream</span>
+<span class="text-on-surface-variant font-semibold">Auth Bypass Bypass</span>
+</div>
+</div>
+</div>
+<!-- Real-Time Request Latency Sparkline Graph -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">5-Minute Tail Latency P99</span>
+<span class="font-mono text-primary font-bold">Average: 36.2ms</span>
+</div>
+<!-- Responsive SVG Latency Graphic -->
+<div class="w-full h-16 pt-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 300 60">
+<defs>
+<lineargradient id="latencyGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#0e1f7a" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#0e1f7a" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,45 Q20,38 40,40 T80,30 T120,48 T160,20 T200,32 T240,28 T280,18 L300,22 L300,60 L0,60 Z" fill="url(#latencyGrad)"></path>
+<path d="M0,45 Q20,38 40,40 T80,30 T120,48 T160,20 T200,32 T240,28 T280,18 L300,22" fill="none" stroke="#0e1f7a" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="160" cy="20" fill="#fea619" r="4"></circle>
+<circle cx="280" cy="18" fill="#004a43" r="4"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-[11px] text-outline font-mono">
+<span>08:45 AM</span>
+<span>08:47 AM</span>
+<span>08:50 AM (Current)</span>
+</div>
+</div>
+</div>
+<!-- Database & Engine Health Indicators -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">database</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Database & Engine Health</h3>
+</div>
+<span class="font-mono text-label-sm text-tertiary bg-tertiary-fixed/30 px-2 py-0.5 rounded font-bold">100% OPERATIONAL</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">dns</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">PostgreSQL v16.1</span>
+<span class="text-[11px] text-tertiary font-medium">32/40 Pool Active (0.8ms)</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[18px]">hourglass_empty</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Zero-Latency Queue</span>
+<span class="text-[11px] text-secondary font-medium">0 Delayed / 12 Ack/sec</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">ACID Transaction Log</span>
+<span class="text-[11px] text-on-surface-variant font-medium">WAL Checksums 100% Clean</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Redis Sentinel Cache</span>
+<span class="text-[11px] text-primary font-medium">Hit Rate: 98.4% (8.2 GB)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Global Event & Registration Audit Ledger (7 Columns on Desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg min-w-0">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Global Event & Registration Audit Ledger</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live audit trail across active clubs, seating saturation, and reservation lock status.</p>
+</div>
+<div class="flex items-center gap-1.5 self-start sm:self-auto">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-mono text-label-sm text-label-sm text-secondary font-bold">18 Total Synced</span>
+</div>
+</div>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap items-center gap-1.5 p-1 bg-surface-container-low rounded-xl" role="tablist">
+<button class="filter-tab px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all" data-filter="all">
+              All (18)
+            </button>
+<button class="filter-tab px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all" data-filter="near-cap">
+              Near Cap (>85%) (8)
+            </button>
+<button class="filter-tab px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all" data-filter="waitlisted">
+              Waitlisted (3)
+            </button>
+<button class="filter-tab px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all" data-filter="high-risk">
+              High Risk / Capacity Spill (1)
+            </button>
+</div>
+<!-- Event Audit Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md rounded-l-lg font-bold">Event & ID</th>
+<th class="py-3 px-space-sm font-bold">Organizer Org</th>
+<th class="py-3 px-space-sm font-bold min-w-[140px]">Capacity Fill</th>
+<th class="py-3 px-space-sm font-bold">Status</th>
+<th class="py-3 px-space-md rounded-r-lg font-bold text-right">Audit Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="audit-table-body">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-category="near-cap">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Spring Hackathon 2025</span>
+<span class="font-mono text-[11px] text-outline">EVT-9041 • Hall C</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-medium">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                      ACM Chapter
+                    </span>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-[11px] font-mono">
+<span class="font-bold text-primary">120/120</span>
+<span class="text-secondary font-bold">100%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-bold whitespace-nowrap">
+                      Sold Out
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inspect-btn px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-[12px] hover:bg-primary-container hover:text-on-primary transition-all font-semibold" data-id="EVT-9041">
+                      Inspect Ledger
+                    </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-category="near-cap waitlisted">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">AI & Robotics Keynote</span>
+<span class="font-mono text-[11px] text-outline">EVT-8820 • Turing Aud.</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                      Robotics Society
+                    </span>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-[11px] font-mono">
+<span class="font-bold text-primary">85/90</span>
+<span class="text-on-surface-variant font-bold">94%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 94%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-[11px] font-bold whitespace-nowrap">
+                      Queue: 14 wait
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inspect-btn px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-[12px] hover:bg-primary-container hover:text-on-primary transition-all font-semibold" data-id="EVT-8820">
+                      Inspect Ledger
+                    </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-category="high-risk waitlisted">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Campus Lawn Sunset Concert</span>
+<span class="font-mono text-[11px] text-error font-semibold">EVT-7104 • Quad Amphitheater</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      Student Council
+                    </span>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-[11px] font-mono">
+<span class="font-bold text-error">152/150</span>
+<span class="text-error font-bold">101% SPILL</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-error font-label-sm text-[11px] font-bold whitespace-nowrap">
+                      Cap Spill (+2)
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inspect-btn px-2.5 py-1 rounded bg-error text-on-error font-label-sm text-[12px] hover:bg-on-error-container transition-all font-semibold" data-id="EVT-7104">
+                      Triage Spike
+                    </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-category="near-cap">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Career Prep & Resume Lab</span>
+<span class="font-mono text-[11px] text-outline">EVT-6512 • Room 204</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                      Career Services
+                    </span>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-[11px] font-mono">
+<span class="font-bold text-primary">36/40</span>
+<span class="text-on-surface-variant font-bold">90%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 90%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-[11px] font-bold whitespace-nowrap">
+                      Open Slots (4)
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inspect-btn px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-[12px] hover:bg-primary-container hover:text-on-primary transition-all font-semibold" data-id="EVT-6512">
+                      Inspect Ledger
+                    </button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-category="near-cap waitlisted">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Design Sprint: EcoMobility</span>
+<span class="font-mono text-[11px] text-outline">EVT-5519 • Design Studio</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-medium">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                      IDSA Campus
+                    </span>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-[11px] font-mono">
+<span class="font-bold text-primary">28/30</span>
+<span class="text-on-surface-variant font-bold">93%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 93%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-[11px] font-bold whitespace-nowrap">
+                      Open Slots (2)
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inspect-btn px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-[12px] hover:bg-primary-container hover:text-on-primary transition-all font-semibold" data-id="EVT-5519">
+                      Inspect Ledger
+                    </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Micro-Inspection Drawer (Collapsible Feedback Loop) -->
+<div class="p-space-md bg-surface rounded-xl flex flex-col gap-2 transition-all" id="inspection-drawer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">receipt_long</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface" id="drawer-title">Selected Node: EVT-9041 (Spring Hackathon 2025)</span>
+</div>
+<span class="font-mono text-label-sm text-tertiary">Cryptographic Sign: SHA256-OK</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="drawer-details">
+              120 Confirmed Attendees • 0 Waitlisted • 100% Student Body Verification via SSO Bypass • Last Checksum Confirmed at 08:50:12 AM UTC
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Feedback Script -->
+<script>
+    (function initAdminDashboard() {
+      // Filter tab interaction
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      const tableRows = document.querySelectorAll('#audit-table-body tr');
+
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          filterTabs.forEach(t => {
+            t.classList.remove('bg-primary-container', 'text-on-primary');
+            t.classList.add('text-on-surface-variant');
+          });
+          tab.classList.add('bg-primary-container', 'text-on-primary');
+          tab.classList.remove('text-on-surface-variant');
+
+          const filterVal = tab.getAttribute('data-filter');
+          tableRows.forEach(row => {
+            if (filterVal === 'all') {
+              row.style.display = '';
+            } else {
+              const cat = row.getAttribute('data-category') || '';
+              if (cat.includes(filterVal)) {
+                row.style.display = '';
+              } else {
+                row.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+
+      // Quick Inspect Actions
+      const inspectButtons = document.querySelectorAll('.inspect-btn');
+      const drawerTitle = document.getElementById('drawer-title');
+      const drawerDetails = document.getElementById('drawer-details');
+
+      const eventData = {
+        'EVT-9041': {
+          title: 'Selected Node: EVT-9041 (Spring Hackathon 2025)',
+          details: '120 Confirmed Attendees • 0 Waitlisted • 100% Student Body Verification via SSO Bypass • Last Checksum Confirmed at 08:50:12 AM UTC'
+        },
+        'EVT-8820': {
+          title: 'Selected Node: EVT-8820 (AI & Robotics Keynote)',
+          details: '85 Confirmed Attendees • 14 Waitlisted in FIFO Priority • Redis Queue Position Latency: 1.2ms • Venue Safety Clearance Valid'
+        },
+        'EVT-7104': {
+          title: 'Selected Node: EVT-7104 (Campus Lawn Sunset Concert)',
+          details: 'ALERT: 152 Issued vs 150 Limit (+2 Overflow). Auto-fail-safe triggered: 2 pending passes diverted to Secondary Buffer Zone.'
+        },
+        'EVT-6512': {
+          title: 'Selected Node: EVT-6512 (Career Prep & Resume Lab)',
+          details: '36 Confirmed • 4 Spots Available • Direct QR check-in ready at Room 204 Kiosk. No race condition detected.'
+        },
+        'EVT-5519': {
+          title: 'Selected Node: EVT-5519 (Design Sprint: EcoMobility)',
+          details: '28 Confirmed • 2 Spots Available • Materials inventory allocated. Synchronized with IDSA Studio hardware credentials.'
+        }
+      };
+
+      inspectButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = btn.getAttribute('data-id');
+          if (eventData[id]) {
+            drawerTitle.textContent = eventData[id].title;
+            drawerDetails.textContent = eventData[id].details;
+            drawerDetails.parentElement.classList.add('bg-surface-container-high');
+            setTimeout(() => {
+              drawerDetails.parentElement.classList.remove('bg-surface-container-high');
+            }, 300);
+          }
+        });
+      });
+
+      // Simulation trigger buttons
+      const btnSpike = document.getElementById('btn-simulate-spike');
+      const btnSanity = document.getElementById('btn-sanity-check');
+      const btnExport = document.getElementById('btn-export-log');
+
+      if (btnSpike) {
+        btnSpike.addEventListener('click', () => {
+          btnSpike.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Simulating 5,000 req/s...';
+          setTimeout(() => {
+            btnSpike.innerHTML = '<span class="material-symbols-outlined text-[18px]">bolt</span> Simulate Spike Traffic';
+            alert('Spike Load Test Complete: 5,000 parallel registration requests handled. 409 Race Locks: 1. Peak latency: 94ms. Zero database degradation.');
+          }, 1200);
+        });
+      }
+
+      if (btnSanity) {
+        btnSanity.addEventListener('click', () => {
+          btnSanity.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> Running Check...';
+          setTimeout(() => {
+            btnSanity.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified_user</span> Run System Sanity Check';
+            alert('Sanity Check Result: All 18 events verified. PostgreSQL WAL logs synchronized. Auth Bypass tokens intact.');
+          }, 800);
+        });
+      }
+
+      if (btnExport) {
+        btnExport.addEventListener('click', () => {
+          alert('Generating encrypted JSON audit bundle for administrative archive...');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="w-full px-margin-desktop py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[16px]">bolt</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">CampusPulse</span></div><span class="hidden sm:inline text-outline">|</span><p class="font-body-sm text-body-sm text-on-surface-variant">Connecting students, student leaders, and campus administration.</p></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-events" href="#">Events Directory</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="organizer-studio" href="#">Club Portal</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-audit" href="#">Safety & Policy</a></div></div></footer></body></html>

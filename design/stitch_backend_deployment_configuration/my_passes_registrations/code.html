@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-tertiary-fixed":"#00201d","surface-variant":"#dde1fc","on-surface":"#161b2e","on-surface-variant":"#454652","surface-bright":"#faf8ff","on-secondary-container":"#684000","surface-container-high":"#e4e7ff","primary":"#0e1f7a","inverse-on-surface":"#eff0ff","secondary":"#855300","primary-fixed-dim":"#bbc3ff","tertiary":"#00322d","inverse-surface":"#2a2f44","surface-container-low":"#f3f2ff","surface-container-lowest":"#ffffff","inverse-primary":"#bbc3ff","on-background":"#161b2e","surface-container":"#ebedff","tertiary-fixed":"#89f5e7","on-secondary":"#ffffff","secondary-fixed-dim":"#ffb95f","on-error":"#ffffff","primary-container":"#2a3890","on-primary-container":"#9ba8ff","tertiary-fixed-dim":"#6bd8cb","surface-tint":"#4957af","on-error-container":"#93000a","outline-variant":"#c6c5d4","on-secondary-fixed-variant":"#653e00","surface-container-highest":"#dde1fc","secondary-fixed":"#ffddb8","on-tertiary-fixed-variant":"#005049","on-primary-fixed":"#000e5f","tertiary-container":"#004a43","primary-fixed":"#dfe0ff","on-tertiary-container":"#4fbfb2","on-tertiary":"#ffffff","surface-dim":"#d5d9f4","background":"#faf8ff","on-secondary-fixed":"#2a1700","error-container":"#ffdad6","error":"#ba1a1a","outline":"#767683","on-primary-fixed-variant":"#303e96","surface":"#faf8ff","secondary-container":"#fea619"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-tablet":"1.5rem","gutter-desktop":"1.75rem","space-md":"1rem","space-xs":"0.25rem",margin:"1rem","space-xl":"2.5rem","margin-desktop":"2.5rem","space-lg":"1.5rem",gutter:"1.25rem","space-sm":"0.5rem"},fontFamily:{"display-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Space Grotesk"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Space Grotesk"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"body-md":["Plus Jakarta Sans"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"26px",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-lg-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(42,56,144,0.06)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="explore-events" href="#"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm group-hover:bg-primary-container transition-colors"><span class="material-symbols-outlined text-[24px]">bolt</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">CampusPulse</span></a><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-label-lg rounded-xl"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="explore-events" href="#">Explore Events</a><a aria-current="page" class="px-space-md py-space-sm transition-all bg-surface-container-high text-primary font-label-lg rounded-xl" data-path="my-passes" href="#">My Passes</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="organizer-studio" href="#">Organizer Studio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="admin-audit" href="#">Admin Audit</a></nav></div><div class="flex items-center gap-space-md"><div class="relative flex items-center p-1 bg-surface-container-lowest rounded-xl shadow-[0_2px_8px_rgba(42,56,144,0.08)]"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider px-space-sm select-none hidden sm:inline">Role</span><div aria-label="Active campus role" class="flex items-center bg-surface-container rounded-lg p-0.5" role="group"><button class="font-label-md text-label-md px-space-sm py-1 rounded-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all" type="button">Student</button><button class="font-label-md text-label-md px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-all" type="button">Organizer</button><button class="font-label-md text-label-md px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-all" type="button">Admin</button></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Top Context & Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+            Sync Active • Student ID #40992
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Session Verified via SSO</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+          My Registered Events & Digital Passes
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Instant digital check-in passes for your campus sessions with zero login friction.
+        </p>
+</div>
+<!-- Action Utility -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container shadow-sm transition-all font-label-lg text-label-lg" id="refreshPassesBtn">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+          Sync Wallet
+        </button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container shadow-sm transition-all font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">add_to_home_screen</span>
+          Save to Apple/Google Wallet
+        </button>
+</div>
+</div>
+<!-- 3-Column Metric Stats Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Metric 1 -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Total Registrations</p>
+<h2 class="font-display-lg text-display-lg text-primary font-bold mt-1">3</h2>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">confirmation_number</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span> 100% Validated
+          </span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Fall Term 2025</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary/5 pointer-events-none"></div>
+</div>
+<!-- Metric 2 -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Active Passes</p>
+<div class="flex items-baseline gap-2 mt-1">
+<h2 class="font-display-lg text-display-lg text-primary font-bold">2</h2>
+<span class="font-label-sm text-label-sm text-secondary-container bg-on-secondary-container/10 px-2 py-0.5 rounded-full font-bold">Ready to Scan</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[26px]">qr_code_scanner</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Next: Oct 24
+          </span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Innovation Lab</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-container/10 pointer-events-none"></div>
+</div>
+<!-- Metric 3 -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Archived / Attended</p>
+<h2 class="font-display-lg text-display-lg text-primary font-bold mt-1">1</h2>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[26px]">history_edu</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span> Certificate Issued
+          </span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Design Thinking</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary-fixed/10 pointer-events-none"></div>
+</div>
+</div>
+<!-- Filter Control Tabs & Search Ribbon -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-low p-2 rounded-xl">
+<div class="flex items-center p-1 bg-surface-container-lowest rounded-lg w-full sm:w-auto shadow-sm" role="tablist">
+<button class="tab-btn font-label-md text-label-md px-space-md py-2 rounded-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all flex items-center gap-1.5" id="tab-all" onclick="filterPasses('all')">
+<span>All Passes</span>
+<span class="px-1.5 py-0.2 rounded-full bg-on-primary/20 text-on-primary text-[10px]">3</span>
+</button>
+<button class="tab-btn font-label-md text-label-md px-space-md py-2 rounded-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5" id="tab-upcoming" onclick="filterPasses('upcoming')">
+<span>Upcoming Active</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant text-[10px]">2</span>
+</button>
+<button class="tab-btn font-label-md text-label-md px-space-md py-2 rounded-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5" id="tab-past" onclick="filterPasses('past')">
+<span>Past / Verified</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant text-[10px]">1</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end px-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">offline_pin</span> Auto-cached offline
+        </span>
+</div>
+</div>
+<!-- Passes Desktop Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl" id="passesContainer">
+<!-- Pass Card 1: Fall Hackathon 2025 (Upcoming) -->
+<article class="pass-card group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden" data-category="upcoming">
+<div class="flex flex-col gap-space-md">
+<!-- Pass Top Meta -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-14 rounded-lg bg-primary-fixed flex flex-col items-center justify-center shrink-0 text-primary">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-tight">OCT</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-none">24</span>
+</div>
+<div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 48h Campus Sprint
+                </span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold leading-snug">
+                  Fall Hackathon 2025
+                </h3>
+</div>
+</div>
+<!-- Ready To Scan Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">sensors</span>
+              Ready to Scan
+            </span>
+</div>
+<!-- Event Details list -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">calendar_today</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Date & Schedule</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Oct 24–26, 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">pin_drop</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Designated Venue</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate" title="Hub Student Commons Innovation Lab">Innovation Lab, Commons</span>
+</div>
+</div>
+</div>
+<!-- Pass Code & QR Module Split -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-bright p-space-md rounded-xl">
+<div class="flex flex-col gap-1 text-center sm:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Fastpass Digital Code</span>
+<span class="font-headline-md text-headline-md text-primary font-mono font-bold tracking-widest">CP-7749-X</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Show this code or hold QR near NFC reader gate 02</p>
+<div class="mt-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">ID Checked: Student General Admission</span>
+</div>
+</div>
+<!-- Stylized Crisp QR Code Pass -->
+<div class="p-3 bg-surface-container-lowest rounded-xl shadow-sm shrink-0 flex flex-col items-center gap-1 group-hover:scale-105 transition-transform">
+<svg class="w-28 h-28 text-primary" fill="currentColor" viewbox="0 0 100 100">
+<!-- QR Corner 1 -->
+<rect fill="currentColor" height="28" rx="4" width="28" x="5" y="5"></rect>
+<rect fill="#faf8ff" height="18" rx="2" width="18" x="10" y="10"></rect>
+<rect fill="currentColor" height="10" rx="1" width="10" x="14" y="14"></rect>
+<!-- QR Corner 2 -->
+<rect fill="currentColor" height="28" rx="4" width="28" x="67" y="5"></rect>
+<rect fill="#faf8ff" height="18" rx="2" width="18" x="72" y="10"></rect>
+<rect fill="currentColor" height="10" rx="1" width="10" x="76" y="14"></rect>
+<!-- QR Corner 3 -->
+<rect fill="currentColor" height="28" rx="4" width="28" x="5" y="67"></rect>
+<rect fill="#faf8ff" height="18" rx="2" width="18" x="10" y="72"></rect>
+<rect fill="currentColor" height="10" rx="1" width="10" x="14" y="76"></rect>
+<!-- Data Blocks -->
+<rect height="6" rx="1" width="6" x="40" y="8"></rect>
+<rect height="6" rx="1" width="6" x="52" y="8"></rect>
+<rect height="6" rx="1" width="12" x="40" y="20"></rect>
+<rect height="14" rx="1" width="6" x="46" y="32"></rect>
+<rect height="6" rx="1" width="8" x="8" y="40"></rect>
+<rect height="10" rx="1" width="6" x="22" y="44"></rect>
+<rect height="6" rx="1" width="10" x="36" y="44"></rect>
+<rect height="8" rx="1" width="8" x="54" y="44"></rect>
+<rect height="6" rx="1" width="14" x="70" y="40"></rect>
+<rect height="12" rx="1" width="6" x="88" y="48"></rect>
+<rect height="16" rx="1" width="6" x="40" y="64"></rect>
+<rect height="6" rx="1" width="12" x="52" y="60"></rect>
+<rect height="14" rx="1" width="8" x="52" y="74"></rect>
+<rect height="10" rx="1" width="6" x="70" y="66"></rect>
+<rect height="6" rx="1" width="12" x="82" y="70"></rect>
+<rect height="8" rx="1" width="14" x="70" y="84"></rect>
+</svg>
+<span class="font-label-sm text-label-sm text-outline tracking-wider font-mono">ENCRYPTED</span>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-colors flex items-center gap-1.5" onclick="alert('Viewing comprehensive event packet for Fall Hackathon 2025')">
+<span class="material-symbols-outlined text-[18px]">info</span>
+              View Event Details
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="sharePass('CP-7749-X')" title="Share Pass link">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+</button>
+</div>
+<button class="px-space-md py-2 rounded-lg text-error hover:bg-error-container/30 font-label-md text-label-md transition-colors flex items-center gap-1" onclick="cancelRegistration(this, 'Fall Hackathon 2025')">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+            Cancel Registration
+          </button>
+</div>
+</article>
+<!-- Pass Card 2: Campus Robotics Showcase (Upcoming) -->
+<article class="pass-card group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden" data-category="upcoming">
+<div class="flex flex-col gap-space-md">
+<!-- Pass Top Meta -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-14 rounded-lg bg-secondary-fixed flex flex-col items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-tight">NOV</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-none">05</span>
+</div>
+<div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[14px]">star</span> VIP Student Access
+                </span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold leading-snug">
+                  Campus Robotics Showcase
+                </h3>
+</div>
+</div>
+<!-- Status Indicator -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Confirmed Spot
+            </span>
+</div>
+<!-- Event Details list -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">calendar_today</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Date & Time</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Nov 05, 2:00 PM EST</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">pin_drop</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Designated Venue</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate" title="Engineering Quad Hall A">Engineering Quad Hall A</span>
+</div>
+</div>
+</div>
+<!-- Pass Code & QR Module Split -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-bright p-space-md rounded-xl">
+<div class="flex flex-col gap-1 text-center sm:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Fastpass Digital Code</span>
+<span class="font-headline-md text-headline-md text-primary font-mono font-bold tracking-widest">CP-3318-R</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Includes Front Row Seating & Lab Prototype Demos</p>
+<div class="mt-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">precision_manufacturing</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Seat: Reserved Row B-14</span>
+</div>
+</div>
+<!-- Stylized QR Code Pass -->
+<div class="p-3 bg-surface-container-lowest rounded-xl shadow-sm shrink-0 flex flex-col items-center gap-1 group-hover:scale-105 transition-transform">
+<svg class="w-28 h-28 text-primary" fill="currentColor" viewbox="0 0 100 100">
+<!-- QR Corner 1 -->
+<rect fill="currentColor" height="28" rx="4" width="28" x="5" y="5"></rect>
+<rect fill="#faf8ff" height="18" rx="2" width="18" x="10" y="10"></rect>
+<rect fill="currentColor" height="10" rx="1" width="10" x="14" y="14"></rect>
+<!-- QR Corner 2 -->
+<rect fill="currentColor" height="28" rx="4" width="28" x="67" y="5"></rect>
+<rect fill="#faf8ff" height="18" rx="2" width="18" x="72" y="10"></rect>
+<rect fill="currentColor" height="10" rx="1" width="10" x="76" y="14"></rect>
+<!-- QR Corner 3 -->
+<rect fill="currentColor" height="28" rx="4" width="28" x="5" y="67"></rect>
+<rect fill="#faf8ff" height="18" rx="2" width="18" x="10" y="72"></rect>
+<rect fill="currentColor" height="10" rx="1" width="10" x="14" y="76"></rect>
+<!-- Geometric Custom Patterns -->
+<rect height="6" rx="1" width="16" x="38" y="12"></rect>
+<rect height="8" rx="1" width="8" x="42" y="24"></rect>
+<rect height="8" rx="1" width="8" x="12" y="44"></rect>
+<rect height="6" rx="1" width="14" x="34" y="40"></rect>
+<rect height="6" rx="1" width="12" x="44" y="52"></rect>
+<rect height="12" rx="1" width="6" x="62" y="38"></rect>
+<rect height="8" rx="1" width="12" x="78" y="42"></rect>
+<rect height="12" rx="1" width="8" x="42" y="68"></rect>
+<rect height="6" rx="1" width="16" x="58" y="64"></rect>
+<rect height="18" rx="1" width="6" x="76" y="60"></rect>
+<rect height="10" rx="1" width="10" x="60" y="80"></rect>
+<rect height="6" rx="1" width="10" x="80" y="84"></rect>
+</svg>
+<span class="font-label-sm text-label-sm text-outline tracking-wider font-mono">PRIORITY PASS</span>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-colors flex items-center gap-1.5" onclick="alert('Viewing Robotics Showcase itinerary and tech specs')">
+<span class="material-symbols-outlined text-[18px]">info</span>
+              View Event Details
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="sharePass('CP-3318-R')" title="Share Pass link">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+</button>
+</div>
+<button class="px-space-md py-2 rounded-lg text-error hover:bg-error-container/30 font-label-md text-label-md transition-colors flex items-center gap-1" onclick="cancelRegistration(this, 'Campus Robotics Showcase')">
+<span class="material-symbols-outlined text-[16px]">event_busy</span>
+            Cancel RSVP
+          </button>
+</div>
+</article>
+<!-- Pass Card 3: Design Thinking Workshop (Past & Verified) -->
+<article class="pass-card group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden" data-category="past">
+<div class="flex flex-col gap-space-md">
+<!-- Pass Top Meta -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-14 rounded-lg bg-surface-container-highest flex flex-col items-center justify-center shrink-0 text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-tight">OCT</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-none">12</span>
+</div>
+<div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold mb-1">
+                  Archived Session
+                </span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold leading-snug">
+                  Design Thinking Workshop
+                </h3>
+</div>
+</div>
+<!-- Verified Attendee Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+              Verified Attendee
+            </span>
+</div>
+<!-- Event Details list -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Attendance Status</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Attended Oct 12, 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">room</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Host Facility</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Arts Media Studio 4</span>
+</div>
+</div>
+</div>
+<!-- Certificate & Credentials Panel -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-bright p-space-md rounded-xl">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Official Credential</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Issued by Stanford D.School Campus Chapter</span>
+<span class="font-label-sm text-label-sm text-outline font-mono mt-1">ID: CERT-DT-2025-9982</span>
+</div>
+</div>
+<button class="w-full sm:w-auto px-space-md py-2.5 rounded-lg bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg text-label-lg font-semibold shadow-sm transition-all flex items-center justify-center gap-2" onclick="downloadCertificate()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+              Download Attendance Certificate
+            </button>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check</span>
+            Hours credited to Co-Curricular Transcript
+          </span>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-colors" onclick="alert('Survey for Design Thinking Workshop is completed. Thank you!')">
+            Feedback Submitted
+          </button>
+</div>
+</article>
+<!-- Interactive Wallet Support Mini-Card -->
+<aside class="bg-gradient-to-br from-primary-container via-primary to-primary-container text-on-primary rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex flex-col gap-space-sm z-10">
+<div class="w-10 h-10 rounded-lg bg-on-primary/10 flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">phonelink_ring</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold tracking-tight text-on-primary">
+            Offline Apple & Google Wallet Integration
+          </h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+            Keep your entry badges available without campus Wi-Fi. Fastpass integrates directly into mobile wallets with automatic gate push notifications.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-sm z-10 flex flex-wrap items-center gap-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-bright font-label-md text-label-md font-bold transition-all flex items-center gap-2 shadow-sm" onclick="alert('Configuring Apple Wallet sync... Passes downloaded!')">
+<span class="material-symbols-outlined text-[18px]">wallet</span>
+            Add to Apple Wallet
+          </button>
+<button class="px-4 py-2 rounded-lg bg-on-primary/15 hover:bg-on-primary/25 text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-2" onclick="alert('Google Wallet intent dispatched!')">
+<span class="material-symbols-outlined text-[18px]">phone_android</span>
+            Google Pay
+          </button>
+</div>
+<!-- Ambient geometric ornament -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-white/5 pointer-events-none"></div>
+</aside>
+</div>
+<!-- Bottom Discovery Banner Section -->
+<section class="mt-space-md w-full bg-surface-container-low rounded-xl p-space-lg md:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg relative overflow-hidden shadow-sm">
+<div class="flex items-center gap-space-lg max-w-2xl">
+<div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 shadow-sm hidden sm:flex">
+<span class="material-symbols-outlined text-[36px]">local_fire_department</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Unleash Your Campus Life</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">
+            Hungry for more campus activities?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Explore 40+ upcoming hackathons, registered student clubs, cultural fests, and intramural sports tournaments open for instant enrollment.
+          </p>
+</div>
+</div>
+<div class="shrink-0 w-full md:w-auto flex flex-col sm:flex-row items-center gap-space-sm">
+<a class="w-full sm:w-auto text-center px-space-xl py-3.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" data-path="explore-events" href="#">
+<span>Explore All Events</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<script>
+  function filterPasses(category) {
+    const cards = document.querySelectorAll('.pass-card');
+    const tabs = document.querySelectorAll('.tab-btn');
+    
+    // Style active tab
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold', 'shadow-sm');
+      tab.classList.add('text-on-surface-variant');
+    });
+
+    const activeTab = document.getElementById('tab-' + category);
+    if (activeTab) {
+      activeTab.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold', 'shadow-sm');
+      activeTab.classList.remove('text-on-surface-variant');
+    }
+
+    // Filter cards
+    cards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function cancelRegistration(btn, eventName) {
+    if (confirm(`Are you sure you want to cancel your pass for "${eventName}"? Your spot will be reallocated to the student waitlist.`)) {
+      const card = btn.closest('.pass-card');
+      card.style.opacity = '0.4';
+      card.style.pointerEvents = 'none';
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> Cancelling...`;
+      
+      setTimeout(() => {
+        card.remove();
+        alert(`Your reservation for "${eventName}" has been canceled. Confirmation sent to your university email.`);
+      }, 700);
+    }
+  }
+
+  function downloadCertificate() {
+    const btn = event.currentTarget;
+    const prevText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> Generating PDF...`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">download_done</span> Downloaded!`;
+      setTimeout(() => {
+        btn.innerHTML = prevText;
+      }, 2000);
+    }, 1000);
+  }
+
+  function sharePass(code) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(`https://campuspulse.edu/passes/verify/${code}`);
+      alert(`Pass verification link for [${code}] copied to your clipboard.`);
+    } else {
+      alert(`Pass Code: ${code}`);
+    }
+  }
+
+  document.getElementById('refreshPassesBtn')?.addEventListener('click', function() {
+    const icon = this.querySelector('.material-symbols-outlined');
+    icon.classList.add('animate-spin');
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      alert('Wallet and fastpasses are completely synchronized with university Registrar data.');
+    }, 600);
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="w-full px-margin-desktop py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[16px]">bolt</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">CampusPulse</span></div><span class="hidden sm:inline text-outline">|</span><p class="font-body-sm text-body-sm text-on-surface-variant">Connecting students, student leaders, and campus administration.</p></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-events" href="#">Events Directory</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="organizer-studio" href="#">Club Portal</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-audit" href="#">Safety & Policy</a></div></div></footer></body></html>

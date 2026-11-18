@@ -40,10 +40,28 @@ def index():
     return jsonify({"message": "Events API", "endpoints": [
         "GET /api/events",
         "GET /api/events/<id>",
+        "GET /api/users?role=<student|organizer|admin>",
         "POST /api/registrations",
         "GET /api/me/registrations?user_id=<uuid>",
         "GET /api/events/<id>/registrations?user_id=<organizer_uuid>",
     ]})
+
+
+@app.get("/api/users")
+def list_users():
+    unavailable = require_database()
+    if unavailable:
+        return unavailable
+    role = request.args.get("role", "").strip().lower()
+    if role not in ("student", "organizer", "organiser", "admin"):
+        return jsonify({"error": "role must be student, organizer, or admin"}), 400
+    try:
+        query = supabase.table("users").select("id,role")
+        query = query.in_("role", ["organizer", "organiser"]) if role in ("organizer", "organiser") else query.eq("role", role)
+        response = query.order("id").limit(500).execute()
+        return jsonify({"users": response.data})
+    except APIError as error:
+        return database_error(error)
 
 
 @app.get("/api/events")

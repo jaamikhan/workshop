@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-tertiary-fixed":"#00201d","surface-variant":"#dde1fc","on-surface":"#161b2e","on-surface-variant":"#454652","surface-bright":"#faf8ff","on-secondary-container":"#684000","surface-container-high":"#e4e7ff","primary":"#0e1f7a","inverse-on-surface":"#eff0ff","secondary":"#855300","primary-fixed-dim":"#bbc3ff","tertiary":"#00322d","inverse-surface":"#2a2f44","surface-container-low":"#f3f2ff","surface-container-lowest":"#ffffff","inverse-primary":"#bbc3ff","on-background":"#161b2e","surface-container":"#ebedff","tertiary-fixed":"#89f5e7","on-secondary":"#ffffff","secondary-fixed-dim":"#ffb95f","on-error":"#ffffff","primary-container":"#2a3890","on-primary-container":"#9ba8ff","tertiary-fixed-dim":"#6bd8cb","surface-tint":"#4957af","on-error-container":"#93000a","outline-variant":"#c6c5d4","on-secondary-fixed-variant":"#653e00","surface-container-highest":"#dde1fc","secondary-fixed":"#ffddb8","on-tertiary-fixed-variant":"#005049","on-primary-fixed":"#000e5f","tertiary-container":"#004a43","primary-fixed":"#dfe0ff","on-tertiary-container":"#4fbfb2","on-tertiary":"#ffffff","surface-dim":"#d5d9f4","background":"#faf8ff","on-secondary-fixed":"#2a1700","error-container":"#ffdad6","error":"#ba1a1a","outline":"#767683","on-primary-fixed-variant":"#303e96","surface":"#faf8ff","secondary-container":"#fea619"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-tablet":"1.5rem","gutter-desktop":"1.75rem","space-md":"1rem","space-xs":"0.25rem",margin:"1rem","space-xl":"2.5rem","margin-desktop":"2.5rem","space-lg":"1.5rem",gutter:"1.25rem","space-sm":"0.5rem"},fontFamily:{"display-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Space Grotesk"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Space Grotesk"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"body-md":["Plus Jakarta Sans"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"26px",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-lg-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(42,56,144,0.06)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="explore-events" href="#"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm group-hover:bg-primary-container transition-colors"><span class="material-symbols-outlined text-[24px]">bolt</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">CampusPulse</span></a><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-label-lg rounded-xl"><a aria-current="page" class="px-space-md py-space-sm transition-all bg-surface-container-high text-primary font-label-lg rounded-xl" data-path="explore-events" href="#">Explore Events</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="my-passes" href="#">My Passes</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="organizer-studio" href="#">Organizer Studio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-space-md py-space-sm rounded-xl transition-all" data-path="admin-audit" href="#">Admin Audit</a></nav></div><div class="flex items-center gap-space-md"><div class="relative flex items-center p-1 bg-surface-container-lowest rounded-xl shadow-[0_2px_8px_rgba(42,56,144,0.08)]"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider px-space-sm select-none hidden sm:inline">Role</span><div aria-label="Active campus role" class="flex items-center bg-surface-container rounded-lg p-0.5" role="group"><button class="font-label-md text-label-md px-space-sm py-1 rounded-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all" type="button">Student</button><button class="font-label-md text-label-md px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-all" type="button">Organizer</button><button class="font-label-md text-label-md px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-all" type="button">Admin</button></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Flare and Hero Discover Banner -->
+<section class="relative w-full overflow-hidden bg-surface-container-low px-margin-desktop py-space-xl">
+<div class="absolute -top-32 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-primary-fixed to-secondary-fixed/40 blur-3xl opacity-60 pointer-events-none"></div>
+<div class="absolute -bottom-24 left-1/3 w-80 h-80 rounded-full bg-gradient-to-tr from-tertiary-fixed-dim/30 to-surface-variant/50 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Persona Context Pill & Live Endpoint Badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="inline-flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-1.5 rounded-full shadow-sm">
+<span class="inline-flex h-2.5 w-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Current Persona</span>
+<span class="font-label-md text-label-md text-primary font-bold bg-surface-container px-space-sm py-0.5 rounded-md">Student</span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="hidden sm:inline font-body-sm text-body-sm text-on-surface-variant">Instant 1-click reservations, no sign-in required</span>
+</div>
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-md">
+<span class="font-label-sm text-label-sm font-bold text-primary font-mono">GET</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">/api/events</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container ml-1"></span>
+</div>
+</div>
+<!-- Main Headline & Subtitle -->
+<div class="max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Fall Quarter 2025 Programming</span>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight mt-space-xs mb-space-sm">
+          Discover & Join Campus Life
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Connect with clubs, launch ventures, join late-night jams, and lock in tickets before capacity caps hit.
+        </p>
+</div>
+<!-- Integrated Search & Filter Controls Panel -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<!-- Live Search Input -->
+<div class="md:col-span-6 lg:col-span-7 relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container placeholder:text-outline" id="eventSearchInput" placeholder="Search hackathons, acoustic sets, intramurals, venues..." type="text"/>
+</div>
+<!-- Date Range Quick Toggle -->
+<div class="md:col-span-4 lg:col-span-3">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">calendar_today</span>
+<select class="w-full bg-surface-container-low text-on-surface font-label-lg text-label-lg pl-10 pr-8 py-3 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer" id="dateRangeSelect">
+<option value="all">Upcoming 14 Days</option>
+<option value="today">Today & Tomorrow</option>
+<option value="weekend">This Weekend</option>
+<option value="month">Month of November</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Quick Refresh / Action Button -->
+<div class="md:col-span-2 flex justify-end">
+<button class="w-full md:w-auto font-label-lg text-label-lg bg-surface-container hover:bg-surface-container-high text-primary px-space-md py-3 rounded-lg transition-colors flex items-center justify-center gap-space-xs" id="resetFiltersBtn">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+<!-- Category Pill Bar -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none" id="categoryPillContainer">
+<button class="category-pill active bg-primary text-on-primary font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all shrink-0" data-cat="all">
+            All Events (6)
+          </button>
+<button class="category-pill bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all shrink-0 flex items-center gap-1.5" data-cat="tech">
+<span class="material-symbols-outlined text-[16px] text-primary">terminal</span> Tech & Coding
+          </button>
+<button class="category-pill bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all shrink-0 flex items-center gap-1.5" data-cat="arts">
+<span class="material-symbols-outlined text-[16px] text-secondary">palette</span> Arts & Design
+          </button>
+<button class="category-pill bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all shrink-0 flex items-center gap-1.5" data-cat="career">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">work</span> Career & Fairs
+          </button>
+<button class="category-pill bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all shrink-0 flex items-center gap-1.5" data-cat="social">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">headphones</span> Social & Music
+          </button>
+<button class="category-pill bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all shrink-0 flex items-center gap-1.5" data-cat="sports">
+<span class="material-symbols-outlined text-[16px] text-primary-container">sports_volleyball</span> Sports & Rec
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Live RSVP State Feedback Modal/Banner Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none max-w-md w-full bg-primary-container text-on-primary p-space-md rounded-xl shadow-xl flex items-center gap-space-md" id="rsvpToast">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">confirmation_number</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-primary truncate">Spot Reserved!</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container" id="rsvpToastMsg">POST /api/registrations: Success</p>
+</div>
+<button class="text-on-primary hover:text-white" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Primary Content Area: Split 9-col Main Feed + 3-col Sidebar Filters -->
+<div class="w-full max-w-7xl mx-auto px-margin-desktop py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- MAIN 8-COLUMN EVENTS FEED -->
+<section class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Active Happenings</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Showing confirmed university approved gatherings</p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Sort by:</span>
+<span class="font-bold text-on-surface bg-surface-container px-2 py-1 rounded">Chronological</span>
+</div>
+</div>
+<!-- 2-column on desktop container (within 8 cols), stacking smoothly -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md" id="eventsGrid">
+<!-- Event 1: AI Quadcopter Workshop -->
+<article class="event-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between relative overflow-hidden" data-capacity="68" data-category="tech" data-venue="makerspace">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern high-tech university engineering lab with students assembling carbon-fiber quadcopter drones, glowing blue LED telemetry strips, soldering irons, precision mechanical tools, collegiate robotics atmosphere with indigo ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu4Um09vj93Hmlf_34dpchXdJ2pTDEq2Gkq-HH3nN-ZTTUDO6R0jn5pMPNQa_5lfQumrRu91TvczLSOfGnP3MBYs36KtaAYmJIQSuRfIC-N9-LY8uCyjoz1WozgZm47k8k92nIiMstzBlZOBlh4Sz56YzFSyLM0FM30hltF2XFxrs_C-CrF89GAD1pOn1JhVWYEtlC8bVaX2EmT8MdZEoxMp2MyBTIxgDBeUEBbkk"/>
+<div class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md flex flex-col items-center shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">OCT</span>
+<span class="font-headline-sm text-headline-sm text-primary leading-none font-bold">24</span>
+</div>
+<div class="absolute top-2.5 right-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">memory</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tech & Coding</span>
+</div>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">MakerSpace Bay 4 • Robotics Lab</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                Autonomous AI Quadcopter Workshop
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                Hands-on flight stack calibration, SLAM navigation basics, and custom firmware flashing with the IEEE Autonomous Flight Club.
+              </p>
+<!-- Capacity Progress Indicator -->
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg p-2.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1.5">
+<span class="text-on-surface-variant">Capacity Status</span>
+<span class="font-bold text-primary">68 / 100 spots filled</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span> 5:30 PM - 8:00 PM
+              </span>
+<button class="rsvp-btn font-label-md text-label-md bg-secondary-container hover:bg-secondary text-on-secondary px-space-md py-2 rounded-lg font-bold shadow-sm transition-all flex items-center gap-1" data-event-id="ev-101" onclick="handleRegistration(this, 'Autonomous AI Quadcopter Workshop', 'OCT 24 • MakerSpace Bay 4')">
+<span>Register Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Event 2: Sunset Ceramics & Pottery Night (Few Spots Left) -->
+<article class="event-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between relative overflow-hidden" data-capacity="93" data-category="arts" data-venue="finearts">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Sunlit ceramic and wheel pottery studio with terracotta vases, clay dust on wooden tables, warm amber late-afternoon golden hour sunlight coming through tall industrial loft windows, students laughing while throwing clay on wheels." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj5WNr6Y5s0HOxD3OR2nhs4jZNmYFZSZgNly-GPrEOycvW7TOE97qfU3Pjs5_g0K0e5pS4BV-SqDjiqKrxNS8lCUse02Y8fwVD2yA23j4OEsCAX3GqrfK3Mt9XeA5elQJemwkFQPckNyW9jGxlkecRmzJ4LA1MB-vPGYCeo20vSVi049WiU6N6NrAZxX8dJNFB8TPqDAat4TXrckJHmwGT1c5BSthXQJyHg0eV078"/>
+<div class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md flex flex-col items-center shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">OCT</span>
+<span class="font-headline-sm text-headline-sm text-primary leading-none font-bold">25</span>
+</div>
+<div class="absolute top-2.5 right-2.5 bg-error-container/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm text-error font-bold">Few Spots Left</span>
+</div>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Fine Arts Hall • Studio 2B</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                Sunset Ceramics & Pottery Night
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                Unwind before midterms with wheel throwing and hand-sculpting basics. All clay, glazes, and kiln firing vouchers included free.
+              </p>
+<!-- Capacity Progress Indicator (Almost Full) -->
+<div class="mt-4 pt-3 bg-error-container/20 rounded-lg p-2.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1.5">
+<span class="text-error font-semibold">Almost at capacity</span>
+<span class="font-bold text-error">28 / 30 spots filled</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 93.3%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span> 6:00 PM - 8:30 PM
+              </span>
+<button class="rsvp-btn font-label-md text-label-md bg-secondary hover:bg-on-secondary-container text-on-secondary px-space-md py-2 rounded-lg font-bold shadow-sm transition-all flex items-center gap-1" data-event-id="ev-102" onclick="handleRegistration(this, 'Sunset Ceramics & Pottery Night', 'OCT 25 • Fine Arts Hall')">
+<span>Claim Spot</span>
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</button>
+</div>
+</article>
+<!-- Event 3: Fall Startup & Venture Fair 2025 -->
+<article class="event-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between relative overflow-hidden" data-capacity="55" data-category="career" data-venue="memorial">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Bustling university grand hall career expo with founders pitching at sleek booth stands, young entrepreneurs holding tablet presentations, tech startup banners, bright morning ambient daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvxV622Hf26XOTRxY0YKiHSM6ZSoB9hIGabctc0XiK_n2u9OpscwtnTKtt2HgSom6drEKSJuKLcuqhR2CtowMLsTR1KWrsfx1PzjaSZnNFKvUwPHN-5fncNL4pPkHZaL050d04BztXIjA2jbjA4bGt3PHj4NGYeBE-GFqCHyOmoJpRXkcDIUV2mz3AkDhNmPq-TVR1kPl6DlWpBe-eBeszTFUm_cJ_dU40Ux8yClk"/>
+<div class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md flex flex-col items-center shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">OCT</span>
+<span class="font-headline-sm text-headline-sm text-primary leading-none font-bold">29</span>
+</div>
+<div class="absolute top-2.5 right-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">store</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold">Career & Fairs</span>
+</div>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Memorial Union • Great Hall</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                Fall Startup & Venture Fair 2025
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                40+ student-led seed ventures, venture capital scouts, and hiring teams looking for engineering, UI/UX, and marketing interns.
+              </p>
+<!-- Capacity Progress Indicator -->
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg p-2.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1.5">
+<span class="text-on-surface-variant">General Admission</span>
+<span class="font-bold text-primary">194 / 350 registered</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 55.4%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span> 10:00 AM - 3:00 PM
+              </span>
+<button class="rsvp-btn font-label-md text-label-md bg-secondary-container hover:bg-secondary text-on-secondary px-space-md py-2 rounded-lg font-bold shadow-sm transition-all flex items-center gap-1" data-event-id="ev-103" onclick="handleRegistration(this, 'Fall Startup & Venture Fair 2025', 'OCT 29 • Memorial Union')">
+<span>Register Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Event 4: Neon Beats: Campus Silent Disco -->
+<article class="event-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between relative overflow-hidden" data-capacity="71" data-category="social" data-venue="lawn">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Outdoor campus amphitheater at dusk with college students wearing glowing RGB wireless silent disco headphones in vibrant cyan and magenta, string lights overhead, festive celebratory campus night festival." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDditUqF3tpvaDr2mFCG4ORrUu9_h7NbdCYukNYiK-DzLww_-wsQTpBmdLaXppILCS0B7JiGaZkDKd3SmVHFIELgtXvXaZEwkTRkg2ml2I8Y_8R78XwLFH7JPYrAta0q0x5xM3ITuEroYCsQZzfAcF35HWq0gMCjt8mTkQLKD2NbBd43P1fH2qluWU_1hUcca_cpjoy6fai8wur8S9YoLmfgsRYK3YSKezPsypzxrI"/>
+<div class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md flex flex-col items-center shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">NOV</span>
+<span class="font-headline-sm text-headline-sm text-primary leading-none font-bold">01</span>
+</div>
+<div class="absolute top-2.5 right-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">party_mode</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Social & Music</span>
+</div>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Lawn Amphitheater • Main Stage</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                Neon Beats: Campus Silent Disco
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                Three live student DJs battling on simultaneous wireless channels: Electronic, Indie Pop, and throwback Hip Hop. Free glowsticks.
+              </p>
+<!-- Capacity Progress Indicator -->
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg p-2.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1.5">
+<span class="text-on-surface-variant">Headphones Reserved</span>
+<span class="font-bold text-primary">142 / 200 registered</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 71%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span> 8:00 PM - 11:30 PM
+              </span>
+<button class="rsvp-btn font-label-md text-label-md bg-secondary-container hover:bg-secondary text-on-secondary px-space-md py-2 rounded-lg font-bold shadow-sm transition-all flex items-center gap-1" data-event-id="ev-104" onclick="handleRegistration(this, 'Neon Beats: Campus Silent Disco', 'NOV 01 • Lawn Amphitheater')">
+<span>Register Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Event 5: Intramural Spikeball Championship -->
+<article class="event-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between relative overflow-hidden" data-capacity="66" data-category="sports" data-venue="rec">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Campus recreation athletic turf field with college students actively diving for a yellow spikeball around a round net, energetic sunny afternoon sports setting, stadium lights in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0xSe5dAaWfzwefqZtRGH-KJz249rpRaFgyifjZVTyGRO12GOk7MpxXWj0zEfzx8XPRUdR3gj48mSUaRMN4gicR1t6Fu4iA7KtQOxtjn6D5_6rkXU6vcedyWklEh3MrIizLynLOyKdWJG7eYsx3TOze6U-SypJFWJSZvkd09W3toVbOas5ma8d8vHtXLyShFEtLV44MejskbEfwc_s0eUoEc6mh-8IvBhU92brTNQ"/>
+<div class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md flex flex-col items-center shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">NOV</span>
+<span class="font-headline-sm text-headline-sm text-primary leading-none font-bold">03</span>
+</div>
+<div class="absolute top-2.5 right-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">sports</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Sports & Rec</span>
+</div>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Rec Turf 2 • North Complex</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                Intramural Spikeball Championship
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                2v2 double-elimination tournament. Trophies, campus bookstore gift cards, and intramural champion shirts for 1st & 2nd place.
+              </p>
+<!-- Capacity Progress Indicator -->
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg p-2.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1.5">
+<span class="text-on-surface-variant">Team Slots</span>
+<span class="font-bold text-primary">32 / 48 registered</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 66.6%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span> 1:00 PM - 5:00 PM
+              </span>
+<button class="rsvp-btn font-label-md text-label-md bg-secondary-container hover:bg-secondary text-on-secondary px-space-md py-2 rounded-lg font-bold shadow-sm transition-all flex items-center gap-1" data-event-id="ev-105" onclick="handleRegistration(this, 'Intramural Spikeball Championship', 'NOV 03 • Rec Turf 2')">
+<span>Register Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Event 6: Open Mic & Acoustic Jam -->
+<article class="event-card group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between relative overflow-hidden" data-capacity="62" data-category="social" data-venue="patio">
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cozy student union outdoor brick patio with acoustic guitarist on small wooden stage, vintage microphone, surrounding fire pit, students sitting on blankets with coffee cups, autumn night atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC52QTO2DL6PUOsj29G1Ogl4JQcP3DxAUSJnWJKzkrU8QIu_conZP2CYFA4QD9JfufjNUQvkSPvfHia2RoA5-zTMIWBaW2zPiXAjqMVxR3taZwx4qV5merZ1-7ICJbjvHTa_OfcWtczqEyJv_9qod8HwQ3NHPEjAlkmg0LJ4nvAkqAjfudI7NIm8xRyBfkxVDppASs7fdKj55bxaalyObzm3BfPolz-bOsTNSTzDGc"/>
+<div class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md flex flex-col items-center shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">NOV</span>
+<span class="font-headline-sm text-headline-sm text-primary leading-none font-bold">07</span>
+</div>
+<div class="absolute top-2.5 right-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">mic</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Social & Arts</span>
+</div>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Student Patio • Fire Pit Commons</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                Open Mic & Acoustic Jam
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                Singer-songwriters, spoken word, and stand-up sets. Hot cider and artisan donuts provided by the Campus Activities Board.
+              </p>
+<!-- Capacity Progress Indicator -->
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg p-2.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1.5">
+<span class="text-on-surface-variant">Patio Pass Count</span>
+<span class="font-bold text-primary">50 / 80 registered</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 62.5%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span> 7:00 PM - 9:30 PM
+              </span>
+<button class="rsvp-btn font-label-md text-label-md bg-secondary-container hover:bg-secondary text-on-secondary px-space-md py-2 rounded-lg font-bold shadow-sm transition-all flex items-center gap-1" data-event-id="ev-106" onclick="handleRegistration(this, 'Open Mic & Acoustic Jam', 'NOV 07 • Student Patio')">
+<span>Register Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- RIGHT SIDEBAR: Fast Campus Filters & Pass Wallet Preview -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Filter Box: Campus Venue & Capacity Status -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">tune</span>
+              Fast Filter
+            </h3>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Refine</span>
+</div>
+<!-- Venues Filter -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Campus Venues</span>
+<div class="space-y-1.5" id="venueFilters">
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox" value="all-venues"/>
+<span class="font-body-sm text-body-sm text-on-surface">All Campus Venues</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">6</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input class="venue-check w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox" value="makerspace"/>
+<span class="font-body-sm text-body-sm text-on-surface">MakerSpace (Engineering)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">1</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input class="venue-check w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox" value="memorial"/>
+<span class="font-body-sm text-body-sm text-on-surface">Memorial Union Hall</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">1</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input class="venue-check w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox" value="rec"/>
+<span class="font-body-sm text-body-sm text-on-surface">Rec Sports Complex</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">1</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input class="venue-check w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox" value="patio"/>
+<span class="font-body-sm text-body-sm text-on-surface">Outdoor Lawn & Patios</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">2</span>
+</label>
+</div>
+</div>
+<!-- Availability Toggle -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Seat Availability</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="availability-pill active font-label-sm text-label-sm bg-primary text-on-primary py-2 px-3 rounded-lg text-center font-semibold transition-all">
+                Open Spots
+              </button>
+<button class="availability-pill bg-surface-container hover:bg-surface-container-high text-on-surface-variant py-2 px-3 rounded-lg text-center font-semibold transition-all">
+                Almost Full
+              </button>
+</div>
+</div>
+</div>
+<!-- Upcoming Pass Preview Box (Student Ticket Wallet Widget) -->
+<div class="bg-primary text-on-primary p-space-md rounded-xl shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-primary-container/40 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">qr_code_2</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">My Fast Passes</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 px-2 py-0.5 rounded-full text-surface-container-lowest">
+<span id="passCount">1</span> Active
+            </span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm relative" id="activePassCard">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wide">Confirmed Pass</span>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold line-clamp-1" id="passTitle">Autonomous AI Quadcopter</h4>
+</div>
+<div class="w-10 h-10 bg-surface-container flex items-center justify-center rounded-lg text-primary">
+<span class="material-symbols-outlined text-[24px]">qr_code</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm pt-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+<span id="passTime">Thursday, Oct 24 • 5:30 PM</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">pin_drop</span>
+<span id="passVenue">MakerSpace Bay 4</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-mono text-outline">CODE: CP-9482-FALL</span>
+<a class="font-label-sm text-label-sm font-bold text-primary hover:underline flex items-center" data-path="my-passes" href="#">
+                Full Pass <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed opacity-90">
+            Show code at venue entrance. Passes sync automatically across student devices.
+          </p>
+</div>
+<!-- Campus Safety & Support Mini Callout -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[16px] font-bold">University SafePass</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All campus sanctioned events comply with Dean of Students safety charters.</p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Simple live filtering & RSVP registration simulator
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('eventSearchInput');
+    const categoryButtons = document.querySelectorAll('.category-pill');
+    const cards = document.querySelectorAll('.event-card');
+    
+    // Category pill filtering
+    categoryButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryButtons.forEach(b => {
+          b.classList.remove('active', 'bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.add('active', 'bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        
+        const cat = btn.getAttribute('data-cat');
+        filterCards();
+      });
+    });
+
+    // Search query listener
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        filterCards();
+      });
+    }
+
+    function filterCards() {
+      const activeBtn = document.querySelector('.category-pill.active');
+      const activeCat = activeBtn ? activeBtn.getAttribute('data-cat') : 'all';
+      const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        const text = card.textContent.toLowerCase();
+        const matchesCat = (activeCat === 'all' || cardCat.includes(activeCat));
+        const matchesQuery = !query || text.includes(query);
+
+        if (matchesCat && matchesQuery) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Reset button
+    const resetBtn = document.getElementById('resetFiltersBtn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        if (searchInput) searchInput.value = '';
+        const allPill = document.querySelector('[data-cat="all"]');
+        if (allPill) allPill.click();
+        cards.forEach(c => c.classList.remove('hidden'));
+      });
+    }
+  });
+
+  // Handle Event Registration (RSVP Action & State Machine)
+  function handleRegistration(button, eventTitle, eventDetails) {
+    if (button.disabled) return;
+
+    // Loading State
+    const originalText = button.innerHTML;
+    button.disabled = true;
+    button.innerHTML = `
+      <span class="material-symbols-outlined text-[16px] animate-spin">refresh</span>
+      <span>Syncing...</span>
+    `;
+
+    setTimeout(() => {
+      // Confirmed State
+      button.innerHTML = `
+        <span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+        <span>Reserved!</span>
+      `;
+      button.classList.remove('bg-secondary-container', 'hover:bg-secondary', 'text-on-secondary');
+      button.classList.add('bg-tertiary-fixed', 'text-on-tertiary-fixed');
+
+      // Update sidebar pass preview
+      const passTitle = document.getElementById('passTitle');
+      const passTime = document.getElementById('passTime');
+      const passCount = document.getElementById('passCount');
+      if (passTitle) passTitle.textContent = eventTitle;
+      if (passTime) passTime.textContent = eventDetails;
+      if (passCount) passCount.textContent = '2';
+
+      // Show floating notification toast
+      const toast = document.getElementById('rsvpToast');
+      const toastMsg = document.getElementById('rsvpToastMsg');
+      if (toast && toastMsg) {
+        toastMsg.textContent = 'Confirmed: ' + eventTitle + ' (Pass issued to student wallet)';
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+
+        setTimeout(() => {
+          dismissToast();
+        }, 4000);
+      }
+    }, 700);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('rsvpToast');
+    if (toast) {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="w-full px-margin-desktop py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[16px]">bolt</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">CampusPulse</span></div><span class="hidden sm:inline text-outline">|</span><p class="font-body-sm text-body-sm text-on-surface-variant">Connecting students, student leaders, and campus administration.</p></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-events" href="#">Events Directory</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="organizer-studio" href="#">Club Portal</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-audit" href="#">Safety & Policy</a></div></div></footer></body></html>
