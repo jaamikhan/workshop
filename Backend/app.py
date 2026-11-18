@@ -1,4 +1,5 @@
 import os
+from uuid import UUID
 
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request
@@ -57,7 +58,12 @@ def list_users():
         return jsonify({"error": "role must be student, organizer, or admin"}), 400
     try:
         query = supabase.table("users").select("id,role")
-        query = query.in_("role", ["organizer", "organiser"]) if role in ("organizer", "organiser") else query.eq("role", role)
+        if role in ("organizer", "organiser"):
+            query = query.in_("role", ["organizer", "organiser"])
+        elif role == "student":
+            query = query.in_("role", ["student", "attendee"])
+        else:
+            query = query.eq("role", role)
         response = query.order("id").limit(500).execute()
         return jsonify({"users": response.data})
     except APIError as error:
@@ -104,6 +110,11 @@ def create_registration():
     event_id = payload.get("event_id")
     if not user_id or not event_id:
         return jsonify({"error": "user_id and event_id are required"}), 400
+    try:
+        UUID(str(user_id))
+        UUID(str(event_id))
+    except (ValueError, TypeError, AttributeError):
+        return jsonify({"error": "user_id and event_id must be valid UUIDs"}), 400
 
     try:
         existing = (supabase.table("registrations").select("id")
@@ -131,6 +142,9 @@ def create_registration():
         message = str(error).lower()
         if "duplicate" in message or "unique" in message or "23505" in message:
             return jsonify({"error": "Already registered"}), 409
+        return database_error(error)
+    except Exception as error:
+        app.logger.exception("Unexpected registration failure")
         return database_error(error)
 
 
