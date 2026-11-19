@@ -5,7 +5,7 @@ import {
   Palette, RefreshCw, Search, Sparkles, Ticket, Users, X, Info
 } from 'lucide-react'
 
-const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '')
+const API_URL = (import.meta.env.VITE_API_URL || 'https://workshop-4heo.onrender.com/').replace(/\/$/, '')
 
 const categories = [
   { id: 'all', label: 'All events', icon: Compass },
